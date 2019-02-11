@@ -22,8 +22,8 @@ app.layout = html.Div(children=[
             ],
             'layout': {
                 'title': 'Yummy Crackers',
-                'xaxis':{'title':'Most Chosen},
-                'yaxis':{'title':'Approval rating'},
+                'xaxis':{'title':'Most Chosen by'},
+                'yaxis':{'title':'Approval Rating'},
             }
         }
     )]
