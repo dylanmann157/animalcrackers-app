@@ -3,23 +3,25 @@ import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
 
-############# Make changes here
 
 
 app = dash.Dash()
 server = app.server
 
+############# Make changes here
+
+
 app.layout = html.Div(children=[
-    html.H1('Plotly Dash - the best way to visualize your data!'),
+    html.H1('your changed title here'),
     dcc.Graph(
         id='this_is_an_id',
         figure={
             'data': [
-                {'x': ['Dash', 'Powerpoint', 'Lascaux cave paintings'], 'y': [8, 2, 3], 'type': 'bar', 'name': 'Intelligence'},
-                {'x': ['Dash', 'Powerpoint', 'Lascaux cave paintings'], 'y': [7, 1, 5], 'type': 'bar', 'name': 'Beauty'},
+                {'x': ['thing1','thing2','thing3'], 'y': [2,3,4], 'type': 'bar', 'name': 'new label 1'},
+                {'x': ['thing1','thing2','thing3'], 'y': [3,4,5], 'type': 'bar', 'name': 'new label 2'},
             ],
             'layout': {
-                'title': "Because friends don't let friends use Microsoft Powerpoint",
+                'title': 'new title here',
                 'xaxis':{'title':'Choice of data visualization'},
                 'yaxis':{'title':'Approval rating by average data scientist'},
             }
