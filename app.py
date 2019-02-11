@@ -12,18 +12,18 @@ server = app.server
 
 
 app.layout = html.Div(children=[
-    html.H1('your changed title here'),
+    html.H1('Animal Cracker Poularity'),
     dcc.Graph(
         id='this_is_an_id',
         figure={
             'data': [
-                {'x': ['thing1','thing2','thing3'], 'y': [2,3,4], 'type': 'bar', 'name': 'new label 1'},
-                {'x': ['thing1','thing2','thing3'], 'y': [3,4,5], 'type': 'bar', 'name': 'new label 2'},
+                {'x': ['Elephant','Monkey','Lion'], 'y': [10,3,4], 'type': 'bar', 'name': 'Kids'},
+                {'x': ['Elephant','Monkey','Lion'], 'y': [10,4,5], 'type': 'bar', 'name': 'Keepers'},
             ],
             'layout': {
-                'title': 'new title here',
-                'xaxis':{'title':'Choice of data visualization'},
-                'yaxis':{'title':'Approval rating by average data scientist'},
+                'title': 'Yummy Crackers',
+                'xaxis':{'title':'Most Chosen},
+                'yaxis':{'title':'Approval rating'},
             }
         }
     )]
